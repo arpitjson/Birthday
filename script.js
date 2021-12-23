@@ -1,8 +1,12 @@
-var days;
-var birthday;
-var hello=birthday;
-function pageRedirect() {
+var days, birthday;
+var hello = birthday;
 
+
+
+
+
+
+function pageRedirect() {
     if (days < 0) {
       window.location.replace("./hello.html");
 
