@@ -1,0 +1,156 @@
+
+
+
+body{
+  font-family:"Quicksand";
+  background: linear-gradient(45deg,#ffb6c1,rgb(106, 106, 226));
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+
+img1{
+  animation: wobble 4s infinite alternate-reverse;
+  transform:rotate(5deg);
+  position:relative;
+  top:0;
+}
+
+.to-date{
+  text-align:center;
+  font-size:32px;
+  font-weight:600;
+  
+}
+#to{
+    display:block;
+    font-size:42px;
+    background:#75727eba;
+    border-radius:100px;
+    margin:10px 0 0 0;
+    padding:8px 5px;
+    font-weight:600;
+  }
+
+  .counter-box {
+             
+              width: 90px;
+              height: 90px;
+              
+              background: #252525;
+              text-align: center;
+              display: inline-block;
+              margin-right: 60px;
+              padding: 20px;
+              border-radius:100px;
+              position:relative;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+  }
+  .countdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow:row;
+        line-height:1;
+  }
+   .counter-container{
+              display:flex;
+              
+              padding:40px 80px;
+              border-radius:100px;
+            }
+          .counter-container p {
+                color: white;
+              }
+               .counter-time {
+                font-size: 60px;
+                margin: 0 0 2px 0;
+                
+              }
+              .counter-tag {
+                margin: 0;
+                font-size: 13px;
+                text-transform: uppercase;
+                position:absolute;
+                bottom:-20px;
+                right:-25px;
+                width:50px;height:50px;
+                background:#252525;
+                border-radius:100px;
+                line-height:3;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+              }
+
+
+@keyframes wobble {
+  from{
+    transform: scale(0.9);
+    top:20px;
+  }
+  to{
+    transform: scale(1);
+    top:0px;
+  }
+}
+.shadow { 
+   color: white; 
+   font: bold 52px Helvetica, Arial, Sans-Serif;
+   text-shadow: 1px 1px #fe4902, 
+                2px 2px #fe4902, 
+                3px 3px #fe4902;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+.shadow:hover {
+   position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px #fe4902, 
+                2px 2px #fe4902, 
+                3px 3px #fe4902, 
+                4px 4px #fe4902, 
+                5px 5px #fe4902, 
+                6px 6px #fe4902;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Pacifico');
+
+.mobile {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 50px;
+  font-size: 65px;
+  display: block;
+}
+
+.hello {
+  display: none;
+}
+
+@media screen and (min-width: 670px) {
+  
+  .mobile {
+    display: none;
+  }
+  
+  .hello {
+  display: block;
+}
+}
+
+
+/* @media only screen and (max-width: 620px){
+    	.countdown-container {
+    		-webkit-transform: scale(0.9);
+      }
+ } */
