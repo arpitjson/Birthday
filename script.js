@@ -1,4 +1,5 @@
 var days;
+var birthday;
 var hello=birthday;
 function pageRedirect() {
 
