@@ -1,8 +1,9 @@
 var days;
+var hello=birthday;
 function pageRedirect() {
 
     if (days < 0) {
-      window.location.replace("./birthday.html");
+      window.location.replace("./hello.html");
 
     }
 
@@ -15,8 +16,7 @@ $(document).ready(function () {
     $(window).trigger('resize');
     var dd = "January 27, 2022";
     var dd1 = "27th January";
-    /*var deadline = new Date("<?php // echo date("M d, Y H:i:s", $promotion['countdown']); ?>").getTime(); */
-    var deadline = new Date(dd + " 00:00:00").getTime();
+       var deadline = new Date(dd + " 00:00:00").getTime();
     var x = setInterval(function () {
 
         var now = new Date().getTime();
@@ -48,8 +48,4 @@ $(document).ready(function () {
 });
 
 
-// window.onload = function() {
-   
-//     window.location.replace("./birthday.html");
-// }
-// setTimeout("function()", 1000);
+
