@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     $(window).trigger('resize');
     $(window).trigger('resize');
-    var dd = "January 27, 2022";
+    var dd = "March 21, 2022";
     var dd1 = "27th January";
        var deadline = new Date(dd + " 00:00:00").getTime();
     var x = setInterval(function () {
